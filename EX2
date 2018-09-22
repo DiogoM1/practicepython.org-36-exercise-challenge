@@ -1,0 +1,11 @@
+print ("Welcome to even checker. This program will help you confirm if a number is even or not. Please follow the live instructions!")
+#the Number class is for a number the user wants to check#
+Number= int(input ("What number would you like to test? "))
+if Number%2 == 0 :
+    print(str(Number) + " is even!")
+    if Number>4:
+        print ("You can also try to subtract "+ str(Number%4) + " for it to divide by 4.")
+else:
+    print("It is not even.")
+    if Number>4:
+        print ("You can also try to subtract "+ str(Number%4) + " for it to divide by 4.")
