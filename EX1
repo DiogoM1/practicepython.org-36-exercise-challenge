@@ -1,0 +1,13 @@
+def date (num1,num2,num3):
+    return str(num1-num2+num3)
+
+def main ():
+    name = input("Give me your name: ")
+    print ("So " + name + " some questions!")
+    year = int (input ("What year is it?: "))
+    age = int (input("Enter your age please " + name + ":"))
+    futureage = int (input("enter the age you want to find the year for"))
+
+    print ("Then is guess you were born around " + date(year,age,futureage))
+
+main()
