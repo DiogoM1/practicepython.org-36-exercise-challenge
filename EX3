@@ -1,0 +1,20 @@
+a = [1,2,3,5,8,13,21,34,55,89]
+result = []
+
+value_input = (input ("What is the barrier value ?"))
+operation = str(input ("What operation do you want? x>" + value_input + " or x<" + value_input + " ? (Insert only the sign)"))
+
+try:
+    value = int(value_input)
+    if operation == "<":
+        for element in a:
+             if element < int (value): result.append(element)
+        print(result)
+    elif operation == ">":
+        for element in a:
+            if element > int (value):result.append(element)
+        print(result)
+    else:
+        print("Error, choose an appropriate sign!")
+except ValueError:
+     print ("Error, run the program again!")
