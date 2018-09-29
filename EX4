@@ -1,0 +1,17 @@
+print ("Welcome, this tool will help you find the divider of any number smaller than 999.")
+#the 999 limi
+number = int(input ("What number do yu want to test? "))
+x = range(1,number)
+result = []
+
+try:
+    if number < 1000:
+        for element in x:
+            if number%element == 0 :
+                result.append(element)
+        print(result)
+    else:
+        print ("Use a number smaller than 999!")
+
+except ValueError:
+     print ("Error, run the program again!")
